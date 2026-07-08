@@ -432,30 +432,41 @@ footer{
       RESPONSIVE DESIGN
 ========================================*/
 
-@media(max-width:992px){
+/* Tablets */
+@media screen and (max-width:992px){
 
     nav{
         flex-direction:column;
-        padding:15px;
+        padding:15px 20px;
+    }
+
+    .logo{
+        margin-bottom:15px;
+        font-size:30px;
     }
 
     nav ul{
+        display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        margin-top:15px;
+        gap:12px;
     }
 
     nav ul li{
-        margin:10px;
+        margin:0;
+    }
+
+    nav ul li a{
+        font-size:15px;
     }
 
     .hero{
-        padding:100px 20px 40px;
         height:auto;
+        padding:140px 25px 60px;
     }
 
     .hero h1{
-        font-size:38px;
+        font-size:42px;
     }
 
     .hero h3{
@@ -463,12 +474,7 @@ footer{
     }
 
     .hero p{
-        font-size:16px;
-    }
-
-    .hero-btn{
-        flex-direction:column;
-        gap:15px;
+        font-size:17px;
     }
 
     section{
@@ -476,29 +482,88 @@ footer{
     }
 }
 
-@media(max-width:768px){
+/* Mobile */
+@media screen and (max-width:768px){
+
+    nav{
+        padding:15px;
+    }
+
+    .logo{
+        font-size:24px;
+        margin-bottom:15px;
+    }
+
+    nav ul{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:12px;
+        width:100%;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:0;
+    }
+
+    nav ul li a{
+        font-size:14px;
+    }
+
+    .hero{
+        padding:220px 20px 60px;
+    }
 
     .profile{
-        width:160px;
-        height:160px;
+        width:150px;
+        height:150px;
+        border-width:4px;
     }
 
     .hero h1{
-        font-size:32px;
+        font-size:34px;
+        margin-top:15px;
     }
 
     .hero h3{
         font-size:18px;
+        line-height:1.6;
+    }
+
+    .hero p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .hero-btn{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        width:100%;
+    }
+
+    .btn,
+    .btn2{
+        width:220px;
+        text-align:center;
+        padding:12px;
+    }
+
+    section{
+        margin:50px auto;
     }
 
     section h2{
         font-size:28px;
     }
 
-    .project-container{
-        grid-template-columns:1fr;
+    .card,
+    .project-card,
+    .edu-card{
+        padding:20px;
     }
 
+    .project-container,
     .education-container{
         grid-template-columns:1fr;
     }
@@ -507,37 +572,69 @@ footer{
         justify-content:center;
     }
 
+    .skills-container span{
+        padding:10px 18px;
+        font-size:14px;
+    }
+
     .contact-info p{
-        font-size:16px;
+        font-size:15px;
         word-break:break-word;
     }
 }
 
-@media(max-width:480px){
+/* Small Mobile */
+@media screen and (max-width:480px){
+
+    nav{
+        padding:12px;
+    }
 
     .logo{
         font-size:22px;
     }
 
+    nav ul{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
     nav ul li a{
-        font-size:14px;
+        font-size:13px;
     }
 
     .hero{
-        padding-top:120px;
+        padding:230px 15px 50px;
+    }
+
+    .profile{
+        width:130px;
+        height:130px;
     }
 
     .hero h1{
         font-size:28px;
     }
 
+    .hero h3{
+        font-size:16px;
+    }
+
     .hero p{
-        font-size:15px;
+        font-size:14px;
     }
 
     .btn,
     .btn2{
-        width:100%;
-        text-align:center;
+        width:200px;
+        font-size:15px;
+    }
+
+    section h2{
+        font-size:25px;
+    }
+
+    .contact-info p{
+        font-size:14px;
     }
 }
