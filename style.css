@@ -390,7 +390,7 @@ section h2::after{
 .project-card p{
     color:#555;
     margin-bottom:10px;
-    text-align:justify;
+    text-align:left;
 }
 
 .project-card h4{
