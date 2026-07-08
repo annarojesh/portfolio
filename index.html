@@ -4,206 +4,223 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Anna Rojesh | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Portfolio of Anna Rojesh - MCA Student, Software Developer, Full Stack Web Developer and AI Enthusiast.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="keywords"
+        content="Anna Rojesh, Portfolio, Python, Django, Full Stack Developer, MCA, AI, Machine Learning">
 
+    <meta name="author" content="Anna Rojesh">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+<!-- =====================================
+            NAVIGATION BAR
+====================================== -->
 
-    <nav>
+<nav>
 
-        <div class="logo">
+    <div class="logo">
+        Portfolio
+    </div>
 
-            Portfolio
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <ul id="nav-links">
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#objective">Objective</a></li>
+
+        <li><a href="#education">Education</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#certifications">Certificates</a></li>
+
+        <li><a href="#internship">Internship</a></li>
+
+        <li><a href="#research">Research</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- =====================================
+                HERO SECTION
+====================================== -->
+
+<header class="hero">
+
+    <img src="profile.png"
+         alt="Anna Rojesh"
+         class="profile">
+
+    <h1>Anna Rojesh</h1>
+
+    <h3>
+        Software Developer • Full-Stack Web Developer • AI Enthusiast
+    </h3>
+
+    <p>
+        MCA Student passionate about Python, Django, Artificial Intelligence,
+        Machine Learning and Full-Stack Web Development with a strong interest
+        in developing innovative software solutions for real-world problems.
+    </p>
+
+    <div class="hero-btn">
+
+        <a href="#contact" class="btn">
+            <i class="fa-solid fa-envelope"></i>
+            Contact Me
+        </a>
+
+        <a href="resume.pdf"
+           class="btn2"
+           target="_blank"
+           download>
+
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+
+        </a>
+
+    </div>
+
+</header>
+<!-- =====================================
+                ABOUT
+====================================== -->
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="card">
+
+        <p>
+            I am an MCA student with a strong passion for software development,
+            Artificial Intelligence, Machine Learning and Full-Stack Web Development.
+            I enjoy designing and developing practical web applications using
+            Python, Django and modern web technologies. My goal is to build
+            innovative, efficient and user-friendly software solutions while
+            continuously improving my technical and problem-solving skills.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+            CAREER OBJECTIVE
+====================================== -->
+
+<section id="objective">
+
+    <h2>Career Objective</h2>
+
+    <div class="card">
+
+        <p>
+            To begin my career in a growth-oriented organization where I can
+            apply my technical knowledge, enhance my programming skills and
+            contribute to innovative software solutions. I aspire to work on
+            challenging projects, learn emerging technologies and grow into
+            a skilled software professional.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+                EDUCATION
+====================================== -->
+
+<section id="education">
+
+    <h2>Education</h2>
+
+    <div class="education-container">
+
+        <div class="edu-card">
+
+            <h3>Master of Computer Applications (MCA)</h3>
+
+            <p>Mar Thoma Institute of Information Technology (MIIT)</p>
+
+            <span>University of Kerala</span>
+
+            <h4>2025 – 2027 (Pursuing)</h4>
 
         </div>
 
-        <ul>
+        <div class="edu-card">
 
-            <li><a href="#about">About</a></li>
+            <h3>Bachelor of Science in Computer Science</h3>
 
-            <li><a href="#objective">Objective</a></li>
+            <p>Sree Ayyappa College</p>
 
-            <li><a href="#education">Education</a></li>
+            <span>University of Kerala</span>
 
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#certifications">Certifications</a></li>
-
-            <li><a href="#internship">Internship</a></li>
-
-            <li><a href="#research">Research</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-    <!-- ================= HERO ================= -->
-
-    <header class="hero">
-
-        <img src="profile.png" alt="Profile Photo" class="profile">
-
-        <h1>Anna Rojesh</h1>
-
-        <h3>Software Developer | Full-Stack Web Developer | AI Enthusiast</h3>
-
-
-        <div class="hero-btn">
-
-            <a href="#contact" class="btn">Contact Me</a>
-
-            <a href="resume.pdf" class="btn2" target="_blank">
-
-                Download Resume
-
-            </a>
+            <h4>2022 – 2025 | 86%</h4>
 
         </div>
 
-    </header>
+        <div class="edu-card">
 
-    <!-- ================= ABOUT ================= -->
+            <h3>Higher Secondary Education</h3>
 
-    <section id="about">
+            <p>Government HSS Thevannoor</p>
 
-        <h2>About Me</h2>
+            <span>DHSE Kerala</span>
 
-        <div class="card">
-
-            <p>
-
-
-                I am a MCA student passionate about
-                developing innovative software solutions using Python, Django and modern
-                web technologies. With a strong interest in Artificial Intelligence,
-                Machine Learning and Full-Stack Web Development, I enjoy creating
-                practical applications that solve real-world problems while continuously
-                expanding my technical knowledge and professional skills.
-
-
-            </p>
+            <h4>2020 – 2022 | 95%</h4>
 
         </div>
 
-    </section>
+        <div class="edu-card">
 
-    <!-- ================= CAREER OBJECTIVE ================= -->
+            <h3>Secondary School (CBSE)</h3>
 
-    <section id="objective">
+            <p>Mar Baselios School</p>
 
-        <h2>Career Objective</h2>
+            <span>CBSE</span>
 
-        <div class="card">
-
-            <p>
-
-                To begin my career in a dynamic and growth-oriented
-                organization where I can apply my technical knowledge,
-                enhance my problem-solving abilities and contribute to
-                innovative software solutions. I aspire to continuously
-                learn emerging technologies, collaborate effectively with
-                teams and grow as a skilled software professional while
-                delivering high-quality results.
-
-            </p>
+            <h4>2020 | 91%</h4>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- ================= EDUCATION ================= -->
+</section>
 
-    <section id="education">
-
-        <h2>Education</h2>
-
-        <div class="education-container">
-
-            <div class="edu-card">
-
-                <h3>Master of Computer Applications (MCA)</h3>
-
-                <p>
-
-                    Mar Thoma Institute of Information Technology (MIIT)
-
-                </p>
-
-                <span>University of Kerala</span>
-
-                <h4>2025 – 2027 (Pursuing)</h4>
-
-            </div>
-
-            <div class="edu-card">
-
-                <h3>Bachelor of Science in Computer Science</h3>
-
-                <p>
-
-                    Sree Ayyappa College
-
-                </p>
-
-                <span>University of Kerala</span>
-
-                <h4>2022 – 2025 | 86%</h4>
-
-            </div>
-
-            <div class="edu-card">
-
-                <h3>Higher Secondary Education</h3>
-
-                <p>
-
-                    Government HSS Thevannoor
-
-                </p>
-
-                <span>DHSE Kerala</span>
-
-                <h4>2020 – 2022 | 95%</h4>
-
-            </div>
-
-            <div class="edu-card">
-
-                <h3>Secondary School</h3>
-
-                <p>
-
-                    Mar Baselios School
-
-                </p>
-
-                <span>CBSE</span>
-
-                <h4>2020 | 91%</h4>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- ================= PROJECTS ================= -->
+<!-- =====================================
+                PROJECTS
+====================================== -->
 
 <section id="projects">
 
@@ -216,15 +233,15 @@
             <h3>🐾 PawsomeHome Website</h3>
 
             <p>
-                A user-friendly web application developed for pet owners,
-                providing services such as pet fostering, pet shelter
-                cleaning, pet adoption assistance and other pet care
-                solutions through an intuitive interface.
+                A responsive web application developed for pet owners,
+                offering services such as pet adoption, pet fostering,
+                shelter cleaning and pet care assistance through an
+                intuitive interface.
             </p>
 
             <h4>Technologies Used</h4>
 
-            <p>HTML • CSS • JavaScript • PHP • MySQL </p>
+            <p>HTML • CSS • JavaScript • PHP • MySQL</p>
 
         </div>
 
@@ -234,9 +251,9 @@
 
             <p>
                 An AI-powered web application developed to assist
-                ophthalmologists in identifying different stages of
-                diabetic retinopathy using retinal fundus images and
-                deep learning techniques.
+                ophthalmologists in identifying the stages of diabetic
+                retinopathy using retinal fundus images and deep
+                learning techniques.
             </p>
 
             <h4>Technologies Used</h4>
@@ -251,9 +268,9 @@
 
             <p>
                 A secure web application that enables users to report
-                cyber crime incidents, upload evidence, track complaint
-                status and allows administrators to efficiently manage
-                complaints through a dedicated dashboard.
+                cybercrime incidents, upload evidence, track complaint
+                status and allows administrators to manage complaints
+                efficiently through a dedicated dashboard.
             </p>
 
             <h4>Technologies Used</h4>
@@ -266,7 +283,9 @@
 
 </section>
 
-<!-- ================= SKILLS ================= -->
+<!-- =====================================
+                SKILLS
+====================================== -->
 
 <section id="skills">
 
@@ -284,12 +303,16 @@
         <span>Bootstrap</span>
         <span>MySQL</span>
         <span>SQLite</span>
+        <span>Git</span>
+        <span>GitHub</span>
 
     </div>
 
 </section>
 
-<!-- ================= CERTIFICATIONS ================= -->
+<!-- =====================================
+            CERTIFICATIONS
+====================================== -->
 
 <section id="certifications">
 
@@ -305,7 +328,7 @@
             Successfully completed a comprehensive Full-Stack Web Development
             Bootcamp covering HTML, CSS, JavaScript, Bootstrap, Node.js,
             Express.js, React.js, MongoDB, REST APIs, Git, GitHub and
-            Web Deployment.
+            deployment techniques.
         </p>
 
         <div class="certificate-buttons">
@@ -313,7 +336,11 @@
             <a href="udemy-fullstack.pdf"
                target="_blank"
                class="btn">
-               <i class="fa-solid fa-eye"></i> View Certificate
+
+                <i class="fa-solid fa-eye"></i>
+
+                View Certificate
+
             </a>
 
         </div>
@@ -321,8 +348,9 @@
     </div>
 
 </section>
-
-<!-- ================= INTERNSHIP ================= -->
+<!-- =====================================
+                INTERNSHIP
+====================================== -->
 
 <section id="internship">
 
@@ -334,14 +362,15 @@
 
         <p><strong>Organization:</strong> Srishti Innovative Educational Services</p>
 
-        <p><strong>Location:</strong> Kazhakkoottam, Trivandrum, Kerala</p>
+        <p><strong>Location:</strong> Kazhakkoottam, Thiruvananthapuram, Kerala</p>
 
         <p><strong>Duration:</strong> 04 May 2026 – 29 May 2026 (1 Month)</p>
 
-
         <p>
-           Successfully completed a one-month internship in Python and Django web development,
-            where I gained practical experience in building web applications using the Django framework.
+            Successfully completed a one-month internship in Python and Django
+            Web Development, gaining practical experience in developing web
+            applications, database integration, authentication systems and
+            responsive user interfaces using the Django framework.
         </p>
 
         <div class="certificate-buttons">
@@ -349,7 +378,10 @@
             <a href="internship-certificate.pdf"
                target="_blank"
                class="btn">
-               <i class="fa-solid fa-eye"></i> View Certificate
+
+                <i class="fa-solid fa-eye"></i>
+                View Certificate
+
             </a>
 
         </div>
@@ -358,7 +390,9 @@
 
 </section>
 
-<!-- ================= RESEARCH & PUBLICATIONS ================= -->
+<!-- =====================================
+        RESEARCH & PUBLICATIONS
+====================================== -->
 
 <section id="research">
 
@@ -366,28 +400,22 @@
 
     <div class="project-container">
 
-        <!-- Conference Presentation -->
+        <!-- Conference -->
 
         <div class="project-card">
 
             <h3>International Conference Paper Presentation</h3>
 
             <p>
-                <strong>Conference:</strong> 3rd International Conference on
-                Intelligent Techniques in Computer and Engineering Science
-                (ITCES'25)
-            </p>
-
-            <p>
-                <strong>Organizer:</strong> Computer Society of India – Student
-                Branch in association with the Department of Computer Science
-                and Engineering, College of Engineering Perumon, Kerala.
+                <strong>Conference:</strong><br>
+                3rd International Conference on Intelligent Techniques in
+                Computer and Engineering Science (ITCES'25)
             </p>
 
             <p>
                 <strong>Paper:</strong><br>
-                "Multimodal Imaging and Deep Learning Fusion for Enhanced
-                COVID-19 Lung Infection Detection"
+                Multimodal Imaging and Deep Learning Fusion for Enhanced
+                COVID-19 Lung Infection Detection
             </p>
 
             <p>
@@ -399,33 +427,36 @@
                 <a href="conference-presentation.pdf"
                    target="_blank"
                    class="btn">
-                   <i class="fa-solid fa-eye"></i> View Certificate
+
+                    <i class="fa-solid fa-eye"></i>
+                    View Certificate
+
                 </a>
 
             </div>
 
         </div>
 
-        <!-- Journal Publication -->
+        <!-- Journal -->
 
         <div class="project-card">
 
             <h3>Journal Publication</h3>
 
             <p>
-                <strong>Journal:</strong>
+                <strong>Journal:</strong><br>
                 Journal of Advance Research in Mobile Computing
             </p>
 
             <p>
                 <strong>Paper:</strong><br>
-                "Multimodal Imaging and Deep Learning Fusion for Enhanced
-                COVID-19 Lung Infection Detection"
+                Multimodal Imaging and Deep Learning Fusion for Enhanced
+                COVID-19 Lung Infection Detection
             </p>
 
             <p>
-                <strong>Volume:</strong> 07 |
-                <strong>Issue:</strong> 02 |
+                <strong>Volume:</strong> 07 &nbsp;|&nbsp;
+                <strong>Issue:</strong> 02 &nbsp;|&nbsp;
                 <strong>Year:</strong> 2025
             </p>
 
@@ -434,7 +465,10 @@
                 <a href="journal-publication.pdf"
                    target="_blank"
                    class="btn">
-                   <i class="fa-solid fa-eye"></i> View Publication
+
+                    <i class="fa-solid fa-eye"></i>
+                    View Publication
+
                 </a>
 
             </div>
@@ -445,33 +479,71 @@
 
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- =====================================
+                CONTACT
+====================================== -->
 
 <section id="contact">
 
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
 
     <div class="contact-info">
 
-        <p>📧 annarojesh@gmail.com</p>
+        <p>
+            <i class="fa-solid fa-envelope"></i>
 
-        <p>📱 +91 81379 31093 </p>
+            <a href="mailto:annarojesh@gmail.com">
+                annarojesh@gmail.com
+            </a>
+        </p>
 
-        <p>🔗 linkedin.com/in/annarojesh</p>
+        <p>
+            <i class="fa-solid fa-phone"></i>
 
-        <p>📍 Kerala, India</p>
+            <a href="tel:+918137931093">
+                +91 81379 31093
+            </a>
+        </p>
+
+        <p>
+            <i class="fa-brands fa-linkedin"></i>
+
+            <a href="https://www.linkedin.com/in/annarojesh"
+               target="_blank">
+
+                linkedin.com/in/annarojesh
+
+            </a>
+        </p>
+
+        <p>
+            <i class="fa-solid fa-location-dot"></i>
+
+            Kerala, India
+
+        </p>
 
     </div>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- =====================================
+                FOOTER
+====================================== -->
 
 <footer>
 
-    <p>© 2026 Anna Rojesh. All Rights Reserved.</p>
+    <p>
+        © 2026 Anna Rojesh. All Rights Reserved.
+    </p>
+
+    <p style="margin-top:10px;font-size:14px;opacity:.8;">
+        Designed & Developed by Anna Rojesh
+    </p>
 
 </footer>
+
+<!-- JavaScript -->
 
 <script src="script.js"></script>
 
