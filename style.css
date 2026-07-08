@@ -1,0 +1,543 @@
+/* ===============================
+   GOOGLE FONT & RESET
+=================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ===============================
+   NAVIGATION BAR
+=================================*/
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0f172a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* ===============================
+   HERO SECTION
+=================================*/
+
+.hero{
+    height:100vh;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.profile{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero h3{
+    color:#a5f3fc;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+/* ===============================
+   BUTTONS
+=================================*/
+
+.hero-btn{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+
+    background:white;
+    color:#2563eb;
+
+    text-decoration:none;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn2{
+
+    border:2px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.btn2:hover{
+
+    background:white;
+
+    color:#2563eb;
+
+}
+
+/* ===============================
+   SECTION
+=================================*/
+
+section{
+
+    width:85%;
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+}
+
+section h2{
+
+    font-size:35px;
+
+    color:#0f172a;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+}
+
+section h2::after{
+
+    content:"";
+
+    width:70px;
+
+    height:4px;
+
+    background:#2563eb;
+
+    display:block;
+
+    margin-top:8px;
+
+}
+
+/* ===============================
+   CARD
+=================================*/
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/* ===============================
+   EDUCATION
+=================================*/
+
+.education-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.edu-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    transition:.4s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.edu-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.edu-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.edu-card span{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.edu-card h4{
+
+    margin-top:15px;
+
+    color:#111827;
+
+}
+/*========================================
+      PROJECTS
+========================================*/
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.4s;
+    border-top:5px solid #2563eb;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.project-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:#555;
+}
+
+.project-card h4{
+    margin-top:20px;
+    color:#111827;
+}
+
+/*========================================
+      SKILLS
+========================================*/
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skills-container span{
+    background:#2563eb;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.skills-container span:hover{
+    background:#0f172a;
+    transform:scale(1.08);
+}
+
+/*========================================
+      CERTIFICATIONS
+========================================*/
+
+#certifications .card{
+    border-left:6px solid #2563eb;
+}
+
+/*========================================
+      INTERNSHIP
+========================================*/
+
+#internship .card{
+    border-left:6px solid #0ea5e9;
+}
+
+/*========================================
+      RESEARCH
+========================================*/
+
+#research .card{
+    margin-bottom:25px;
+    border-left:6px solid #8b5cf6;
+}
+
+#research h3{
+    color:#8b5cf6;
+    margin-bottom:12px;
+}
+.certificate-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+/*========================================
+      CONTACT
+========================================*/
+
+.contact-info{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.contact-info p{
+    margin:18px 0;
+    font-size:18px;
+}
+
+.contact-info i{
+    color:#2563eb;
+    margin-right:12px;
+    font-size:20px;
+}
+
+/*========================================
+      FOOTER
+========================================*/
+
+footer{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+/*========================================
+      SCROLLBAR
+========================================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0f172a;
+}
+
+/*========================================
+      RESPONSIVE DESIGN
+========================================*/
+
+@media(max-width:992px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .hero{
+        padding:100px 20px 40px;
+        height:auto;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h3{
+        font-size:22px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-btn{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    section{
+        width:92%;
+    }
+}
+
+@media(max-width:768px){
+
+    .profile{
+        width:160px;
+        height:160px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero h3{
+        font-size:18px;
+    }
+
+    section h2{
+        font-size:28px;
+    }
+
+    .project-container{
+        grid-template-columns:1fr;
+    }
+
+    .education-container{
+        grid-template-columns:1fr;
+    }
+
+    .skills-container{
+        justify-content:center;
+    }
+
+    .contact-info p{
+        font-size:16px;
+        word-break:break-word;
+    }
+}
+
+@media(max-width:480px){
+
+    .logo{
+        font-size:22px;
+    }
+
+    nav ul li a{
+        font-size:14px;
+    }
+
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .btn,
+    .btn2{
+        width:100%;
+        text-align:center;
+    }
+}
